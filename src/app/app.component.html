@@ -2,3 +2,9 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+
+<input type="text" id="search" [ngModel]="dearchText" 
+(ngModelChange)="searchKey($event)" placeholder="Find by name">
+
+<div class="row" *ngFor="let emp of employess">
+</div>
