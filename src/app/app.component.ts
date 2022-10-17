@@ -1,4 +1,9 @@
-import { Component, VERSION, OnInit } from '@angular/core';
+import {
+  Component,
+  VERSION,
+  OnInit,} from '@angular/core';
+  import { SearchPipe } from './search.pipe';
+
 interface Employee {
   name: string;
   salary: number;
@@ -40,4 +45,17 @@ export class AppComponent implements OnInit {
             return element.name.toLowerCase();
           });
   }
+
+  data = [
+    { id: 1, name: 'angular' },
+    { id: 2, name: 'react' },
+    { id: 3, name: 'java' },
+    { id: 4, name: 'python' },
+  ];
+
+
+ enterSerachValue: string = '';
+
+  
+  
 }
