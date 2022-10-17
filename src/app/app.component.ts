@@ -2,7 +2,7 @@ import {
   Component,
   VERSION,
   OnInit,} from '@angular/core';
-  import { SearchPipe } from './search.pipe';
+  
 
 interface Employee {
   name: string;
