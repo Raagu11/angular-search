@@ -14,7 +14,7 @@ interface Employee {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  name = 'Angular ' + VERSION.major;
+  name = 'pipe + search bar ' + VERSION.major;
   searchText: string;
 
   employeeList: Employee[] = [
